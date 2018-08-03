@@ -135,7 +135,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".btn {\r\n    margin: 10px 0px;\r\n}\r\n\r\n#product {\r\n    text-align: center;\r\n}\r\n\r\n#price{\r\n    display: none;\r\n    text-align: center;\r\n    border: 2px double green;\r\n    font-size: 2em;\r\n}\r\n\r\n#cals {\r\n    display: none;\r\n    text-align: center;\r\n    border: 2px double green;\r\n    font-size: 2em;\r\n}"
+module.exports = ".btn {\r\n    margin: 10px 0px;\r\n}\r\n\r\n#product {\r\n    text-align: center;\r\n}\r\n\r\n#price {\r\n    display: none;\r\n    text-align: center;\r\n    border: 2px double #5EACE9;\r\n    font-size: 1.5em;\r\n    border-radius: 50px;\r\n}\r\n\r\n#cals {\r\n    display: none;\r\n    text-align: center;\r\n    border: 2px double #5EACE9;\r\n    font-size: 1.5em;\r\n    border-radius: 50px;\r\n}\r\n\r\nlabel {\r\n    margin-bottom: 0px;\r\n    font-size: 20px;\r\n}\r\n\r\n.main {\r\n    margin-top: 15px;\r\n    background-color: #DBE7EF;\r\n}\r\n\r\n.checkbox {\r\n    margin-top: 10px;\r\n    padding: 0px;\r\n    margin-left: 15px;\r\n}\r\n\r\nselect,\r\ninput {\r\n    font-weight: bold;\r\n    font-size: 0.9rem;\r\n    -webkit-appearance: none;\r\n    border-radius: 50px;\r\n    text-align-last: center;\r\n    color: #848484\r\n}\r\n\r\n.alignEnd {\r\n    text-align: center;\r\n}\r\n\r\n.textLabel {\r\n    background-color: white;\r\n    width: 100px;\r\n    border-radius: 50px;\r\n    padding-bottom: 5px;\r\n    padding-top: 2px;\r\n    color: #848484\r\n}\r\n\r\n.textLabel:hover {\r\n    background-color: #5EACE9;\r\n    color: white;\r\n}\r\n\r\nselect:hover,\r\nselect:active,\r\nselect:focus {\r\n    background-color: #5EACE9;\r\n    color: white;\r\n}\r\n\r\n.logoImg {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.logoImg img {\r\n    border-radius: 100px;\r\n}\r\n\r\n.calcCurrency {\r\n    color: #848484;\r\n    font-weight: bold;\r\n}\r\n\r\n.button {\r\n    border-radius: 50px;\r\n}"
 
 /***/ }),
 
@@ -146,7 +146,7 @@ module.exports = ".btn {\r\n    margin: 10px 0px;\r\n}\r\n\r\n#product {\r\n    
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-12\">\n      <div (change)=\"price()\">\n        <div class=\"form-group\">\n          <div class=\"btn btn-success btn-block\">Продукт</div>\n          <select name=\"product\" id=\"product\" #product (change)=\"fan(product.value)\" class=\"form-control\">\n            <option value=\"default\" selected>Виберіть Значення</option>\n            <option value=\"zebra\">Зебра М19 МП</option>\n            <option value=\"kolibri\">Колібрі М19</option>\n          </select>\n        </div>\n        <div class=\"form-group\">\n          <div class=\"btn btn-success btn-block\"> Модуль</div>\n          <select name=\"mod\" id=\"mod\" #type (change)=\"fan1(type.value)\" class=\"form-control\">\n            <option value=\"default\" selected>Виберіть Значення</option>\n            <option value=\"O\">O</option>\n            <option value=\"A\">A</option>\n            <option value=\"B\">B</option>\n            <option value=\"C\">C</option>\n            <option value=\"D\">D</option>\n          </select>\n        </div>\n        <div class=\"form-group\">\n          <div class=\"btn btn-success btn-block\">Ширина</div>\n          <select name=\"width\" id=\"width\" #width (change)=\"fan2(width.value)\" class=\"form-control\">\n            <option value=\"default\" selected>Виберіть Значення</option>\n            <option value=\"30\">30</option>\n            <option value=\"40\">40</option>\n            <option value=\"50\">50</option>\n            <option value=\"60\">60</option>\n            <option value=\"70\">70</option>\n            <option value=\"80\">80</option>\n            <option value=\"90\">90</option>\n            <option value=\"100\">100</option>\n            <option value=\"110\">110</option>\n            <option value=\"120\">120</option>\n            <option value=\"130\">130</option>\n            <option value=\"140\">140</option>\n          </select>\n        </div>\n        <div class=\"form-group\">\n          <div class=\"btn btn-success btn-block\">Висота</div>\n          <select name=\"heigth\" id=\"heigth\" #heigth (change)=\"fan3(heigth.value)\" class=\"form-control\">\n            <option value=\"default\" selected>Виберіть Значення</option>\n            <option value=\"60\">60</option>\n            <option value=\"80\">80</option>\n            <option value=\"100\">100</option>\n            <option value=\"120\">120</option>\n            <option value=\"140\">140</option>\n            <option value=\"160\">160</option>\n            <option value=\"180\">180</option>\n            <option value=\"200\">200</option>\n            <option value=\"220\">220</option>\n            <option value=\"240\">240</option>\n          </select>\n        </div>\n      </div>\n      <div id=\"price\"></div>\n      <div class=\"calculet\">\n        <div class=\"form-group\">\n          <label for=\"currency\">Розрахунок Валюти</label>\n          <input type=\"number\" name=\"currency\" id=\"currency\" placeholder=\"Введіть курс Валюти\" class=\"form-control\" #currency>\n        </div>\n        <div id=\"cals\">\n          <span>\n            {{test}}\n          </span>\n        </div>\n        <button (click)=\"Calc(currency.value)\" type=\"button\" class=\"btn btn-primary btn-block\">Розразувати</button>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"container\">\n  <div class=\"row main\">\n    <div class=\"col-12\">\n      <div class=\"logo\">\n        <div class=\"row\">\n          <div class=\"col-12 logoImg text-center\">\n            <img src=\"https://pp.userapi.com/c624317/v624317330/4876c/HoVPYLVgHAA.jpg?ava=1\" width=\"280px\" height=\"150px\" alt=\"Dear House\">\n          </div>\n        </div>\n      </div>\n      <div (change)=\"price()\">\n        <div class=\"form-group\">\n          <div class=\"row\">\n            <div class=\"col-4 align-self-center alignEnd\">\n              <label class=\"textLabel\">Продукт</label>\n            </div>\n            <div class=\"col-8\">\n              <select name=\"product\" id=\"product\" #product (change)=\"fan(product.value)\" class=\"form-control\">\n                <option value=\"default\" selected>Виберіть значення</option>\n                <option value=\"zebra\">Зебра М19 МП</option>\n                <option value=\"kolibri\">Колібрі М19</option>\n              </select>\n            </div>\n          </div>\n        </div>\n        <div class=\"form-group\">\n          <div class=\"row\">\n            <div class=\"col-4 align-self-center alignEnd\">\n              <label class=\"textLabel\"> Модуль</label>\n            </div>\n            <div class=\"col-8\">\n              <select name=\"mod\" id=\"mod\" #type (change)=\"fan1(type.value)\" class=\"form-control\">\n                <option value=\"default\" selected>Виберіть значення</option>\n                <option value=\"O\">O</option>\n                <option value=\"A\">A</option>\n                <option value=\"B\">B</option>\n                <option value=\"C\">C</option>\n                <option value=\"D\">D</option>\n              </select>\n            </div>\n          </div>\n        </div>\n        <div class=\"form-group\">\n          <div class=\"row\">\n            <div class=\"col-4 alignEnd\">\n              <label class=\"textLabel\">Ширина</label>\n            </div>\n            <div class=\"col-8\">\n              <select name=\"width\" id=\"width\" #width (change)=\"fan2(width.value)\" class=\"form-control\">\n                <option value=\"default\" selected>Виберіть значення</option>\n                <option value=\"30\">30</option>\n                <option value=\"40\">40</option>\n                <option value=\"50\">50</option>\n                <option value=\"60\">60</option>\n                <option value=\"70\">70</option>\n                <option value=\"80\">80</option>\n                <option value=\"90\">90</option>\n                <option value=\"100\">100</option>\n                <option value=\"110\">110</option>\n                <option value=\"120\">120</option>\n                <option value=\"130\">130</option>\n                <option value=\"140\">140</option>\n              </select>\n            </div>\n          </div>\n        </div>\n        <div class=\"form-group\">\n          <div class=\"row\">\n            <div class=\"col-4 alignEnd\">\n              <label class=\"textLabel\">Висота</label>\n            </div>\n            <div class=\"col-8\">\n              <select name=\"heigth\" id=\"heigth\" #heigth (change)=\"fan3(heigth.value)\" class=\"form-control\">\n                <option value=\"default\" selected>Виберіть значення</option>\n                <option value=\"60\">60</option>\n                <option value=\"80\">80</option>\n                <option value=\"100\">100</option>\n                <option value=\"120\">120</option>\n                <option value=\"140\">140</option>\n                <option value=\"160\">160</option>\n                <option value=\"180\">180</option>\n                <option value=\"200\">200</option>\n                <option value=\"220\">220</option>\n                <option value=\"240\">240</option>\n              </select>\n            </div>\n          </div>\n        </div>\n        <div class=\"form-group\">\n          <div class=\"row\">\n            <div class=\"col-4 alignEnd\">\n              <label class=\"textLabel\">Фіксація</label>\n            </div>\n            <div class=\"col-8\">\n              <select name=\"checkbox\" id=\"checkbox\" #checkbox (change)=\"fan4(checkbox.value)\" class=\"form-control\">\n                <option value=\"yes\" selected>ТАК</option>\n                <option value=\"no\">Ні</option>\n              </select>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div id=\"price\"></div>\n      <div class=\"calculet\">\n        <div class=\"form-group text-center \">\n          <label for=\"currency\" class=\"calcCurrency\">Розрахунок Валюти</label>\n          <input type=\"number\" name=\"currency\" id=\"currency\" placeholder=\"Введіть курс Валюти\" class=\"form-control\" #currency>\n        </div>\n        <div id=\"cals\">\n        </div>\n        <button (click)=\"Calc(currency.value)\" type=\"button\" class=\"button btn btn-primary btn-block\">Розрахувати</button>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -173,6 +173,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var MainComponent = /** @class */ (function () {
     function MainComponent() {
+        this.checkbox = 'yes';
         this.arr = [
             {
                 product: 'zebra', type: 'O', width: '30', heigth: '60', price: '11.9'
@@ -3430,26 +3431,47 @@ var MainComponent = /** @class */ (function () {
         this.heigth = value;
     };
     MainComponent.prototype.fan4 = function (value) {
-        this.color = value;
+        this.checkbox = value;
+    };
+    MainComponent.prototype.fan6 = function (value) {
+        this.valuta = (value.target.value);
     };
     MainComponent.prototype.Calc = function (value) {
         this.valuta = (value);
-        this.test = this.valuta * this.CurPrice;
-        this.test = parseFloat(this.test.toFixed(3));
-        console.log(this.test);
-        document.getElementById('cals').style.display = 'block';
+        if (this.checkbox == 'yes') {
+            this.test = this.valuta * (this.CurPrice + 1.5);
+            this.test = parseFloat(this.test.toFixed(3));
+            var check = this.test;
+            var price = check.toString();
+            document.getElementById('cals').innerText = price;
+            document.getElementById('cals').style.display = 'block';
+        }
+        else if (this.checkbox == 'no') {
+            this.test = this.valuta * this.CurPrice;
+            this.test = parseFloat(this.test.toFixed(3));
+            var check = this.test;
+            var price = check.toString();
+            document.getElementById('cals').innerText = price;
+            document.getElementById('cals').style.display = 'block';
+        }
     };
     MainComponent.prototype.price = function () {
         for (var index = 0; index < this.arr.length; index++) {
-            var element_1 = this.arr[index];
-            if (element_1.product == this.product && element_1.type == this.type && element_1.heigth == this.heigth && element_1.width == this.width) {
-                this.CurPrice = parseFloat(element_1.price);
-                document.getElementById('price').innerText = (element_1.price + '$');
-                document.getElementById('price').style.display = 'block';
-                break;
+            var element = this.arr[index];
+            if (element.product == this.product && element.type == this.type && element.heigth == this.heigth && element.width == this.width) {
+                this.CurPrice = parseFloat(element.price);
+                if (this.checkbox == 'yes') {
+                    var check = this.CurPrice + (1.5);
+                    var price = check.toString();
+                    document.getElementById('price').innerText = (price);
+                    document.getElementById('price').style.display = 'block';
+                }
+                else if (this.checkbox = 'no') {
+                    document.getElementById('price').innerText = (element.price);
+                    document.getElementById('price').style.display = 'block';
+                }
             }
             else {
-                // document.getElementById('price').innerText = 'Немає ціни'
             }
         }
     };
