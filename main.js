@@ -93,8 +93,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _main_main_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./main/main.component */ "./src/app/main/main.component.ts");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/index.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _main_main_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./main/main.component */ "./src/app/main/main.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -105,20 +106,22 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
-                _main_main_component__WEBPACK_IMPORTED_MODULE_3__["MainComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+                _main_main_component__WEBPACK_IMPORTED_MODULE_4__["MainComponent"]
             ],
             imports: [
+                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_2__["NgbModule"].forRoot(),
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"]
             ],
             providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -135,7 +138,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".btn {\r\n    margin: 10px 0px;\r\n}\r\n\r\n#product {\r\n    text-align: center;\r\n}\r\n\r\n#price {\r\n    display: none;\r\n    text-align: center;\r\n    border: 2px double #5EACE9;\r\n    font-size: 1.5em;\r\n    border-radius: 50px;\r\n}\r\n\r\n#cals {\r\n    display: none;\r\n    text-align: center;\r\n    border: 2px double #5EACE9;\r\n    font-size: 1.5em;\r\n    border-radius: 50px;\r\n}\r\n\r\nlabel {\r\n    margin-bottom: 0px;\r\n    font-size: 20px;\r\n}\r\n\r\n.main {\r\n    margin-top: 15px;\r\n    background-color: #DBE7EF;\r\n}\r\n\r\n.checkbox {\r\n    margin-top: 10px;\r\n    padding: 0px;\r\n    margin-left: 15px;\r\n}\r\n\r\nselect,\r\ninput {\r\n    font-weight: bold;\r\n    font-size: 0.9rem;\r\n    -webkit-appearance: none;\r\n    border-radius: 50px;\r\n    text-align-last: center;\r\n    color: #848484\r\n}\r\n\r\n.alignEnd {\r\n    text-align: center;\r\n}\r\n\r\n.textLabel {\r\n    background-color: white;\r\n    width: 100px;\r\n    border-radius: 50px;\r\n    padding-bottom: 5px;\r\n    padding-top: 2px;\r\n    color: #848484\r\n}\r\n\r\n.textLabel:hover {\r\n    background-color: #5EACE9;\r\n    color: white;\r\n}\r\n\r\nselect:hover,\r\nselect:active,\r\nselect:focus {\r\n    background-color: #5EACE9;\r\n    color: white;\r\n}\r\n\r\n.logoImg {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.logoImg img {\r\n    border-radius: 100px;\r\n}\r\n\r\n.calcCurrency {\r\n    color: #848484;\r\n    font-weight: bold;\r\n}\r\n\r\n.button {\r\n    border-radius: 50px;\r\n}"
+module.exports = ".btn {\r\n    margin: 10px 0px;\r\n}\r\n\r\n#product {\r\n    text-align: center;\r\n}\r\n\r\n#price {\r\n    display: none;\r\n    text-align: center;\r\n    border: 2px double #5EACE9;\r\n    font-size: 1.5em;\r\n    border-radius: 50px;\r\n}\r\n\r\n#cals {\r\n    display: none;\r\n    text-align: center;\r\n    border: 2px double #5EACE9;\r\n    font-size: 1.5em;\r\n    border-radius: 50px;\r\n}\r\n\r\nlabel {\r\n    margin-bottom: 0px;\r\n    font-size: 20px;\r\n}\r\n\r\n.main {\r\n    margin-top: 15px;\r\n    background-color: #DBE7EF;\r\n}\r\n\r\n.checkbox {\r\n    margin-top: 10px;\r\n    padding: 0px;\r\n    margin-left: 15px;\r\n}\r\n\r\nselect,\r\ninput {\r\n    font-weight: bold;\r\n    font-size: 0.9rem;\r\n    -webkit-appearance: none;\r\n    border-radius: 50px;\r\n    text-align-last: center;\r\n    color: #848484\r\n}\r\n\r\n.alignEnd {\r\n    text-align: center;\r\n}\r\n\r\n.textLabel {\r\n    background-color: white;\r\n    width: 100px;\r\n    border-radius: 50px;\r\n    padding-bottom: 5px;\r\n    padding-top: 2px;\r\n    color: #848484\r\n}\r\n\r\n.textLabel:hover {\r\n    background-color: #5EACE9;\r\n    color: white;\r\n}\r\n\r\nselect:hover,\r\nselect:active,\r\nselect:focus {\r\n    background-color: #5EACE9;\r\n    color: white;\r\n}\r\n\r\n.logoImg {\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.logoImg img {\r\n    border-radius: 100px;\r\n}\r\n\r\n.calcCurrency {\r\n    color: #848484;\r\n    font-weight: bold;\r\n}\r\n\r\n.button {\r\n    border-radius: 50px;\r\n}\r\n\r\n.emptyHistory {\r\n    color: #848484;\r\n    font-weight: bold;\r\n    font-size: 20px;\r\n    text-align: center;\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.buttonHistory {\r\n    text-align: center;\r\n}"
 
 /***/ }),
 
@@ -146,7 +149,7 @@ module.exports = ".btn {\r\n    margin: 10px 0px;\r\n}\r\n\r\n#product {\r\n    
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row main\">\n    <div class=\"col-12\">\n      <div class=\"logo\">\n        <div class=\"row\">\n          <div class=\"col-12 logoImg text-center\">\n            <img src=\"https://image.ibb.co/c8yqVe/Ho_VPYLVg_HAA.jpg\" width=\"280px\" height=\"150px\" alt=\"Dear House\">\n          </div>\n        </div>\n      </div>\n      <div (change)=\"price()\">\n        <div class=\"form-group\">\n          <div class=\"row\">\n            <div class=\"col-4 align-self-center alignEnd\">\n              <label class=\"textLabel\">Продукт</label>\n            </div>\n            <div class=\"col-8\">\n              <select name=\"product\" id=\"product\" #product (change)=\"fan(product.value)\" class=\"form-control\">\n                <option value=\"default\" selected>Виберіть значення</option>\n                <option value=\"zebra\">Зебра М19 МП</option>\n                <option value=\"kolibri\">Колібрі М19</option>\n              </select>\n            </div>\n          </div>\n        </div>\n        <div class=\"form-group\">\n          <div class=\"row\">\n            <div class=\"col-4 align-self-center alignEnd\">\n              <label class=\"textLabel\"> Модуль</label>\n            </div>\n            <div class=\"col-8\">\n              <select name=\"mod\" id=\"mod\" #type (change)=\"fan1(type.value)\" class=\"form-control\">\n                <option value=\"default\" selected>Виберіть значення</option>\n                <option value=\"O\">O</option>\n                <option value=\"A\">A</option>\n                <option value=\"B\">B</option>\n                <option value=\"C\">C</option>\n                <option value=\"D\">D</option>\n              </select>\n            </div>\n          </div>\n        </div>\n        <div class=\"form-group\">\n          <div class=\"row\">\n            <div class=\"col-4 alignEnd\">\n              <label class=\"textLabel\">Ширина</label>\n            </div>\n            <div class=\"col-8\">\n              <select name=\"width\" id=\"width\" #width (change)=\"fan2(width.value)\" class=\"form-control\">\n                <option value=\"default\" selected>Виберіть значення</option>\n                <option value=\"30\">30</option>\n                <option value=\"40\">40</option>\n                <option value=\"50\">50</option>\n                <option value=\"60\">60</option>\n                <option value=\"70\">70</option>\n                <option value=\"80\">80</option>\n                <option value=\"90\">90</option>\n                <option value=\"100\">100</option>\n                <option value=\"110\">110</option>\n                <option value=\"120\">120</option>\n                <option value=\"130\">130</option>\n                <option value=\"140\">140</option>\n              </select>\n            </div>\n          </div>\n        </div>\n        <div class=\"form-group\">\n          <div class=\"row\">\n            <div class=\"col-4 alignEnd\">\n              <label class=\"textLabel\">Висота</label>\n            </div>\n            <div class=\"col-8\">\n              <select name=\"heigth\" id=\"heigth\" #heigth (change)=\"fan3(heigth.value)\" class=\"form-control\">\n                <option value=\"default\" selected>Виберіть значення</option>\n                <option value=\"60\">60</option>\n                <option value=\"80\">80</option>\n                <option value=\"100\">100</option>\n                <option value=\"120\">120</option>\n                <option value=\"140\">140</option>\n                <option value=\"160\">160</option>\n                <option value=\"180\">180</option>\n                <option value=\"200\">200</option>\n                <option value=\"220\">220</option>\n                <option value=\"240\">240</option>\n              </select>\n            </div>\n          </div>\n        </div>\n        <div class=\"form-group\">\n          <div class=\"row\">\n            <div class=\"col-4 alignEnd\">\n              <label class=\"textLabel\">Фіксація</label>\n            </div>\n            <div class=\"col-8\">\n              <select name=\"checkbox\" id=\"checkbox\" #checkbox (change)=\"fan4(checkbox.value)\" class=\"form-control\">\n                <option value=\"yes\" selected>ТАК</option>\n                <option value=\"no\">Ні</option>\n              </select>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div id=\"price\"></div>\n      <div class=\"calculet\">\n        <div class=\"form-group text-center \">\n          <label for=\"currency\" class=\"calcCurrency\">Розрахунок Валюти</label>\n          <input type=\"number\" name=\"currency\" id=\"currency\" placeholder=\"Введіть курс Валюти\" class=\"form-control\" #currency>\n        </div>\n        <div id=\"cals\">\n        </div>\n        <button (click)=\"Calc(currency.value)\" type=\"button\" class=\"button btn btn-primary btn-block\">Розрахувати</button>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"container\">\n  <div class=\"row main\">\n    <div class=\"col-12\">\n      <div class=\"logo\">\n        <div class=\"row\">\n          <div class=\"col-12 logoImg text-center\">\n            <img src=\"https://image.ibb.co/c8yqVe/Ho_VPYLVg_HAA.jpg\" width=\"200px\" height=\"100px\" alt=\"Dear House\">\n          </div>\n        </div>\n      </div>\n      <div (change)=\"price()\">\n        <div class=\"form-group\">\n          <div class=\"row\">\n            <div class=\"col-4 align-self-center alignEnd\">\n              <label class=\"textLabel\">Продукт</label>\n            </div>\n            <div class=\"col-8\">\n              <select name=\"product\" id=\"product\" #product (change)=\"fan(product.value)\" class=\"form-control\">\n                <option value=\"default\" selected>Виберіть значення</option>\n                <option value=\"zebra\">Зебра М19 МП</option>\n                <option value=\"kolibri\">Колібрі М19</option>\n              </select>\n            </div>\n          </div>\n        </div>\n        <div class=\"form-group\">\n          <div class=\"row\">\n            <div class=\"col-4 align-self-center alignEnd\">\n              <label class=\"textLabel\"> Категорія</label>\n            </div>\n            <div class=\"col-8\">\n              <select name=\"mod\" id=\"mod\" #type (change)=\"fan1(type.value)\" class=\"form-control\">\n                <option value=\"default\" selected>Виберіть значення</option>\n                <option value=\"O\">O</option>\n                <option value=\"A\">A</option>\n                <option value=\"B\">B</option>\n                <option value=\"C\">C</option>\n                <option value=\"D\">D</option>\n              </select>\n            </div>\n          </div>\n        </div>\n        <div class=\"form-group\">\n          <div class=\"row\">\n            <div class=\"col-4 alignEnd\">\n              <label class=\"textLabel\">Ширина</label>\n            </div>\n            <div class=\"col-8\">\n              <select name=\"width\" id=\"width\" #width (change)=\"fan2(width.value)\" class=\"form-control\">\n                <option value=\"default\" selected>Виберіть значення</option>\n                <option value=\"30\">30</option>\n                <option value=\"40\">40</option>\n                <option value=\"50\">50</option>\n                <option value=\"60\">60</option>\n                <option value=\"70\">70</option>\n                <option value=\"80\">80</option>\n                <option value=\"90\">90</option>\n                <option value=\"100\">100</option>\n                <option value=\"110\">110</option>\n                <option value=\"120\">120</option>\n                <option value=\"130\">130</option>\n                <option value=\"140\">140</option>\n              </select>\n            </div>\n          </div>\n        </div>\n        <div class=\"form-group\">\n          <div class=\"row\">\n            <div class=\"col-4 alignEnd\">\n              <label class=\"textLabel\">Висота</label>\n            </div>\n            <div class=\"col-8\">\n              <select name=\"heigth\" id=\"heigth\" #heigth (change)=\"fan3(heigth.value)\" class=\"form-control\">\n                <option value=\"default\" selected>Виберіть значення</option>\n                <option value=\"60\">60</option>\n                <option value=\"80\">80</option>\n                <option value=\"100\">100</option>\n                <option value=\"120\">120</option>\n                <option value=\"140\">140</option>\n                <option value=\"160\">160</option>\n                <option value=\"180\">180</option>\n                <option value=\"200\">200</option>\n                <option value=\"220\">220</option>\n                <option value=\"240\">240</option>\n              </select>\n            </div>\n          </div>\n        </div>\n        <div class=\"form-group\">\n          <div class=\"row\">\n            <div class=\"col-4 alignEnd\">\n              <label class=\"textLabel\">Фіксація</label>\n            </div>\n            <div class=\"col-8\">\n              <select name=\"checkbox\" id=\"checkbox\" #checkbox (change)=\"fan4(checkbox.value)\" class=\"form-control\">\n                <option value=\"yes\" selected>ТАК</option>\n                <option value=\"no\">Ні</option>\n              </select>\n            </div>\n          </div>\n        </div>\n      </div>\n      <div id=\"price\"></div>\n      <div class=\"calculet\">\n        <div class=\"form-group text-center \">\n          <label for=\"currency\" class=\"calcCurrency\">Розрахунок Валюти</label>\n          <input type=\"number\" name=\"currency\" id=\"currency\" placeholder=\"Введіть курс Валюти\" class=\"form-control\" #currency>\n        </div>\n        <div id=\"cals\">\n        </div>\n        <button (click)=\"Calc(currency.value)\" type=\"button\" class=\"button btn btn-primary btn-block\">Розрахувати</button>\n      </div>\n      <div>\n        <p class=\"buttonHistory\">\n          <button type=\"button\" class=\"btn btn-outline-primary\" (click)=\"isCollapsed = !isCollapsed\" [attr.aria-expanded]=\"!isCollapsed\"\n            aria-controls=\"collapseExample\">\n            Історія\n          </button>\n        </p>\n        <div *ngIf=\"arrHistory.length<=0\" [ngbCollapse]=\"isCollapsed\" class=\"emptyHistory\">Історія пуста</div>\n        <div class=\"history\" *ngIf=\"arrHistory.length>0\">\n          <div>\n            <div id=\"collapseExample\" [ngbCollapse]=\"isCollapsed\">\n              <div class=\"card\">\n                <div class=\"card-body\">\n                  <table>\n                    <tr *ngFor=\"let key of arrHistory | slice:0:6\">\n                      <td>Ціна -  {{key.price}} <br> Дата - {{currentDate | date:'yy-MM-dd h:MM:ss'}}</td>\n                    </tr>\n                  </table>\n                </div>\n              </div>\n            </div>\n          </div>\n          <button (click)=\"clear()\">Очистити історію</button>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -173,7 +176,9 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 
 var MainComponent = /** @class */ (function () {
     function MainComponent() {
+        this.isCollapsed = true;
         this.checkbox = 'yes';
+        this.arrHistory = [];
         this.arr = [
             {
                 product: 'zebra', type: 'O', width: '30', heigth: '60', price: '11.9'
@@ -3436,9 +3441,12 @@ var MainComponent = /** @class */ (function () {
     MainComponent.prototype.fan6 = function (value) {
         this.valuta = (value.target.value);
     };
+    MainComponent.prototype.clear = function () {
+        this.arrHistory = [];
+    };
     MainComponent.prototype.Calc = function (value) {
-        console.log(this.test);
         this.valuta = (value);
+        this.currentDate = Date.now();
         if (this.checkbox == 'yes') {
             this.test = this.valuta * (this.CurPrice + 1.5);
             this.test = parseFloat(this.test.toFixed(3));
@@ -3450,6 +3458,7 @@ var MainComponent = /** @class */ (function () {
             else {
                 document.getElementById('cals').innerText = price;
                 document.getElementById('cals').style.display = 'block';
+                this.arrHistory.unshift({ 'price': price });
             }
         }
         else if (this.checkbox == 'no') {
@@ -3459,8 +3468,9 @@ var MainComponent = /** @class */ (function () {
             var price = check.toString();
             document.getElementById('cals').innerText = price;
             document.getElementById('cals').style.display = 'block';
+            this.arrHistory.unshift({ 'price': price });
+            // this.arrHistory.unshift({'data'})
         }
-        // }
     };
     MainComponent.prototype.price = function () {
         for (var index = 0; index < this.arr.length; index++) {
